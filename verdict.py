@@ -46,7 +46,7 @@ def main():
             st.dataframe(pslist)
             df[['pasal','drop']] = df['pasal'].str.split(' ayat',expand=True)
             # df[['pasal', 'drop']] = df['pasal'].str.split('pasal ', expand=True)
-            st.write(df['pasal'].unique())
+            #st.write(df['pasal'].unique())
             ftlist = ['pasal 13','pasal 4','pasal 15','pasal 16','pasal 1','pasal 5','pasal 9','pasal 19','pasal 17']
             ftmt = df[df['pasal'].isin(ftlist)]
             ftmt = ftmt[['pasal']]
