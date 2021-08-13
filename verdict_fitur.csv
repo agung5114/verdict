@@ -1,0 +1,18 @@
+pasal_no;pasal;pasal_terkait;keterangan;contoh_kasus
+13;pasal 13;Pasal 13 UU PPN;Faktur Pajak tidak sesuai Ketentuan;Pajak Masukan yang dikreditkan, tidak atau belum dilaporkan Lawan tranksaksi
+13;pasal 13;Pasal 13 UU PPN;Faktur Pajak tidak sesuai Ketentuan;Faktur Pajak yang dikreditkan tidak memenuhi Kelengkapan Formal
+13;pasal 13;Pasal 13 UU PPN;Penyetoran dan/atau Pelaporan tidak sesuai ketentuan;Terdapat perbedaan antara nilai yang dilaporkan Wajib Pajak dengan Lawan transaksi atas suatu transaksi
+13;pasal 13;Pasal 13 UU PPN;Penyetoran dan/atau Pelaporan tidak sesuai ketentuan;Terdapat perbedaan antara nilai yang dilaporkan Wajib Pajak dengan Lawan transaksi atas suatu transaksi
+13;pasal 13;Pasal 13 UU PPN;Penyetoran dan/atau Pelaporan tidak sesuai ketentuan;Terdapat perbedaan NPWP yang dilaporkan Wajib Pajak dengan Lawan transaksi atau data Internal DJP
+13;pasal 13;Pasal 13 UU PPN;Penyetoran dan/atau Pelaporan tidak sesuai ketentuan;Terdapat perbedaan antara nilai yang dilaporkan Wajib Pajak dengan Lawan transaksi atas suatu transaksi
+13;pasal 13;Pasal 13 UU PPN;Penyetoran dan/atau Pelaporan tidak sesuai ketentuan;Terdapat perbedaan antara nilai yang dilaporkan Wajib Pajak dengan Lawan transaksi atas suatu transaksi
+13;pasal 13;Pasal 13 UU PPN;Penyetoran dan/atau Pelaporan tidak sesuai ketentuan;Faktur pajak sudah pernah dikreditkan
+4;pasal 4;Pasal 4 UU PPN;Objek Pajak kena PPN belum dilakukan penyetoran/ Pelaporan;Terdapat transaksi yang dilaporkan Lawan transaksi, dianggap sebagai Penyerahan yang belum disetor/dilaporkan
+16;pasal 16;Pasal 16 UU PPN;Pemungutan oleh pemungut tidak sesuai ketentuan;Faktur Pajak yang dilakukan pemungutan oleh pemungut PPN
+16;pasal 16;Pasal 16 UU PPN;Fasilitas PPN tidak dipungut tidak memenuhi ketentuan;Faktur atas transaksi yang mendapatkan fasilitas untuk tidak dipungut PPN nya sebagian atau seluruhnya tidak bisa digunakan sebagai kredit pajak
+1;pasal 1;Pasal 1 UU PPN;Penyerahan Kena Pajak belum dilakukan penyetoran/ Pelaporan;Selisih omset PPh dan PPN dianggap sebagai Penyerahan BKP yg belum disetor/dilaporkan
+5;pasal 5;Pasal 5 UU PPN;PPN atas Penyerahan BKP/JKP yang batal/diganti tidak sesuai ketentuan;Koreksi Faktur Pajak atas transaksi yang dibatalkan/diganti
+9;pasal 9;Pasal 9 UU PPN;Pajak Masukan Tidak sesuai ketentuan;Pengkreditan PM atas transaksi sebelum dikukuhkan PKP
+9;pasal 9;Pasal 9 UU PPN;Pajak Masukan Tidak sesuai ketentuan;PM yang dikreditkan dinaggap tidak berhubungan langsung dengan usaha
+19;pasal 19;Pasal 19 PP1 2012;Jangka Waktu Penerbitan/Pengkreditan Pajak Masukan tidak sesuai ketentuan;Pengekreditan Faktur Pajak Lewat Waktu
+17;pasal 17;Pasal 17 PP1 2012;Penetapan Saat Terutang nya PPN tidak sesuai ketentuan;Perbedaan saat terutang PPN antara temuan pemeriksaan dengan data pelaporan/ sanggahan WP
