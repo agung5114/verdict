@@ -46,7 +46,7 @@ def main():
             st.dataframe(pslist)
             df[['pasal','drop']] = df['pasal'].str.split(' ayat',expand=True)
             df[['pasal', 'drop']] = df['pasal'].str.split('pasal ', expand=True)
-            ftlist = [13,4,15,16,1,5,9,19,17]
+            ftlist = ['13','4','15','16','1','5','9','19','17']
             ftmt = []
             for ps in df.pasal.tolist():
                 if ps in ftlist:
