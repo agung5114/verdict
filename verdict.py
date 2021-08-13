@@ -45,12 +45,16 @@ def main():
             pslist = df.pasal.unique()
             st.dataframe(pslist)
             df[['pasal','drop']] = df['pasal'].str.split(' ayat',expand=True)
-            df[['pasal', 'drop']] = df['pasal'].str.split('pasal ', expand=True)
-            ftlist = ['13','4','15','16','1','5','9','19','17']
-            ftmt = []
-            for ps in df.pasal.tolist():
-                if ps in ftlist:
-                    ftmt.append(ps)
+            # df[['pasal', 'drop']] = df['pasal'].str.split('pasal ', expand=True)
+            st.write(df['pasal'].unique())
+            ftlist = ['pasal 13','pasal 4','pasal 15','pasal 16','pasal 1','pasal 5','pasal 9','pasal 19','pasal 17']
+            ftmt = df[df['pasal'].isin(ftlist)]
+            ftmt = ftmt[['pasal']]
+            ftmt = ftmt['pasal'].unique()
+            # # for ps in df.pasal.tolist():
+            # #     if ps in ftlist:
+            # #         ftmt.append(ps)
+            st.write('Fitur untuk Prediksi')
             st.dataframe(ftmt)
         st.subheader("Features")
         #Intializing
