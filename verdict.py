@@ -70,14 +70,14 @@ def main():
                     # st.table(ketlist)
                     # tlist = pd.DataFrame(ketlist)
                     # st.dataframe(tlist)
-                    fig = go.Figure(data=[go.Table(header=dict(values=['Pasal-Pasal dalam Pokok Sengketa']),
+                    fig = go.Figure(data=[go.Table(header=dict(values=['Pasal dalam Pokok Sengketa']),
                                                    cells=dict(values=[ketlist],
                                                               align='left',
                                                               height=30,
                                                               font=dict(size=14))
                                                    )
                                           ],
-                                    layout=go.Layout(height=200, width=250))
+                                    layout=go.Layout(height=200, width=200))
                     fig.update_layout(
                         margin=dict(l=5, r=0, t=0, b=0),)
                     st.plotly_chart(fig)
