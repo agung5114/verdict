@@ -28,7 +28,7 @@ def main():
     if choice == "Verdict Prediction":
         # st.subheader("Prediction from Model")
 #         st.title("MachineLearning Analytics App")
-        st.subheader("Verdict Prediction")
+        st.subheader("Upload Dokumen untuk Melihat Hasil Banding")
         # iris= Image.open('iris.png')
 
         data = st.file_uploader('Upload File PDF',type='.pdf')
@@ -141,7 +141,7 @@ def main():
 
     
     elif choice == "Detailed File Extraction":
-        st.title("Detailed Pasal Extraction as a Feature from PDF Files")
+        st.title("Esktraksi Pasal-Pasal dari dokumen PDF")
         data = st.file_uploader('Upload File', type='.pdf')
         if data == None:
             st.write('Please upload PDF File')
