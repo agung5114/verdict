@@ -20,7 +20,7 @@ from extract import getBagian, extract_pasal,getBagian2, extract_pasal2
 st.set_page_config(layout='wide')
 
 def main():
-    menu = ["Verdict Prediction","Detailed File Extraction"]
+    menu = ["Verdict Prediction","Other Files Prediction"]
     
     choice = st.sidebar.selectbox("Select Menu", menu)
 
@@ -140,7 +140,7 @@ def main():
                     st.title('Permohonan Banding Dikabulkan Seluruhnya')
 
     
-    elif choice == "Detailed File Extraction":
+    elif choice == "Other Files Prediction":
         st.title("Detailed Pasal Extraction as a Feature from PDF Files")
         data = st.file_uploader('Upload File', type='.pdf')
         if data == None:
