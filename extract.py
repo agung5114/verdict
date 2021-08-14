@@ -36,10 +36,51 @@ def getBagian(files):
         print('pasal')
     return aDict
 
+
+def getBagian2(files):
+    aDict = {}
+    aDict['pasal'] = {}
+    # files = 'pdf/' + file + ".pdf"
+    txtObj = extract_text(files,laparams=LAParams(),codec="utf-8")
+    start, stop, key = 0,0,""
+    for each in re.finditer('[A-Z ]{7,}',txtObj):
+    #     print(each)
+        if each[0].strip() == key : continue
+#         for item in ['melawan', "sengketa", "perkara",'permasalahan',"analisa","pertimbangan", "ketentuan", "mengadili"]:
+#         for item in ["sengketa", "mengadili"]:
+        for item in ["tanggapanterbanding", "kesimpulandanusul"]:
+            if item in  each[0].lower().replace(" ","") :
+                stop = each.span()[0]
+                if start > 0 :  aDict['pasal'][key] = txtObj[start:stop].strip()
+                key = each[0].strip()
+                start = each.span()[1]
+    aDict['pasal'][key] = txtObj[start:-1].strip()
+    try :
+        aDict['pasal']['results'] = re.match('([A-Za-z]+ +){2}',aDict['pasal'][key])[0].lower()
+    except :
+        print('pasal')
+    return aDict
+
 def extract_pasal(aDict):
     dictPasal = {}
-    for item in aDict :
+    for item in aDict:
         key = list(aDict[item])[1]
+
+        aList = []
+        for each in re.findall('pasal [0-9]+[abcde]{0,1}[ (ayt)0-9]+', aDict[item][key].lower()):
+            tList = re.findall('[0-9]+', each)
+            if len(tList) > 1:
+                aList.append("pasal " + tList[0] + " ayat " + tList[1])
+            else:
+                aList.append("pasal " + tList[0])
+        dictPasal[item] = aList
+        aList = []
+    return dictPasal
+
+def extract_pasal2(aDict):
+    dictPasal = {}
+    for item in aDict :
+        key = list(aDict[item])[0]
         
         aList = []
         for each in re.findall('pasal [0-9]+[ (ayt)0-9]+', aDict[item][key].lower()) :
