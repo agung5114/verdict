@@ -132,7 +132,7 @@ def main():
                 if prediction[0] == '0':
                     st.subheader('Prediksi Hasil Verdict')
                     st.title('Permohonan Banding Ditolak')
-                elif prediction[0] == '1':
+                elif prediction[0] == '2':
                     st.subheader('Prediksi Hasil Verdict')
                     st.title('Permohonan Banding Dikabulkan Sebagian')
                 else:
