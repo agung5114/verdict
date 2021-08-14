@@ -20,7 +20,7 @@ from extract import getBagian, extract_pasal
 st.set_page_config(layout='wide')
 
 def main():
-    menu = ["Verdict Prediction","Dispute Prediction","Metric Scores"]
+    menu = ["Verdict Prediction","Detailed File Extraction"]
     
     choice = st.sidebar.selectbox("Select Menu", menu)
 
@@ -33,7 +33,7 @@ def main():
 
         data = st.file_uploader('Upload File PDF',type='.pdf')
         if data == None:
-            st.write('Silakan Upload File dengan format pdf')
+            st.write('Please choose pdf file to upload')
         else:
             text = getBagian(data)
             pasal = extract_pasal(text)
