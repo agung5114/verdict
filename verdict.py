@@ -77,7 +77,7 @@ def main():
                                                               font=dict(size=14))
                                                    )
                                           ],
-                                    layout=go.Layout(height=200, width=300))
+                                    layout=go.Layout(height=200, width=250))
                     fig.update_layout(
                         margin=dict(l=5, r=0, t=0, b=0),)
                     st.plotly_chart(fig)
