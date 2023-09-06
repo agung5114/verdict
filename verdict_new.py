@@ -56,6 +56,7 @@ def main():
     if data == None:
         st.write('Please choose pdf file to upload')
     else:
+        v1=v2=v3=v4=v5=v6=v7=v8=v9=v10 = 0
         with st.expander('View PDF'):
             displayPDF(data)
         # st.markdown(displayPDF, unsafe_allow_html=True)
