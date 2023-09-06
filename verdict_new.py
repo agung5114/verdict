@@ -76,7 +76,7 @@ def main():
             v9 = 1 if tlist[6] in df['pasal'].values else 0
             v10 = 1 if tlist[7] in df['pasal'].values else 0
             # aDict = pickle.load(open("aDict.p","rb"))
-            c1,c2= st.columns((3,8))
+            c1,c2= st.columns((1,1))
             with c1:
                 ket = pd.read_excel('verdict_fitur.xlsx')
                 pslist = df.pasal.unique()
